@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".oneGamerActivity">
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="score" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        android:text="  level"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="96dp"
+        android:text="Atempts  :"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="98dp"
+        android:text="4"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="172dp"
+        android:text="/5"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="69dp"
+        android:background="@android:drawable/editbox_background"
+        android:text="  [15-33]"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-177dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/x"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="84dp"
+        android:text="SHARE SCORE"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="178dp"
+        android:text="VALIDATE"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="131dp"
+        android:text="Do your chose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnac"
+        tools:layout_editor_absoluteX="105dp" />
+
+    <Button
+        android:id="@+id/btnSms"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="SMS"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <Button
+        android:id="@+id/btnPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Phone"
+        app:layout_constraintBottom_toTopOf="@+id/btnWeb"
+        app:layout_constraintStart_toStartOf="@+id/btnMap"
+        app:layout_constraintTop_toBottomOf="@+id/btnMap" />
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Web"
+        app:layout_constraintBottom_toTopOf="@+id/btnShare"
+        app:layout_constraintStart_toStartOf="@+id/btnPhone"
+        app:layout_constraintTop_toBottomOf="@+id/btnPhone" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="42dp"
+        android:text="Map"
+        app:layout_constraintBottom_toTopOf="@+id/btnPhone"
+        app:layout_constraintStart_toStartOf="@+id/btnSms"
+        app:layout_constraintTop_toBottomOf="@+id/btnSms" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="25dp"
+        android:text="Share"
+        app:layout_constraintBottom_toTopOf="@+id/btnac"
+        app:layout_constraintStart_toStartOf="@+id/btnac"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeb" />
+
+    <Button
+        android:id="@+id/btnac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="21dp"
+        android:text="New Activity"
+        app:layout_constraintBottom_toTopOf="@+id/txt"
+        app:layout_constraintStart_toStartOf="@+id/txt"
+        app:layout_constraintTop_toBottomOf="@+id/btnShare" />
+
+</android.support.constraint.ConstraintLayout>
